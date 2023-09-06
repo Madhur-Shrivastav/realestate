@@ -1,0 +1,204 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "number",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "contact",
+        "type": "string"
+      }
+    ],
+    "name": "buyProperty",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getProperties",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "Number",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "ImageURL",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "Location",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "Produced",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "OwnerAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "OwnerName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "OwnerContact",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "Size",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "Bedrooms",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "Bathrooms",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "Kitchens",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "Drawingrooms",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "Price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "Status",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct RealEstate.Property[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "manager",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "url",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "location",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "produced",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "contact",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "size",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "bedrooms",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "bathrooms",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "kitchens",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "drawingrooms",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      }
+    ],
+    "name": "sellProperty",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "totalproperties",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

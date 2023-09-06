@@ -1,0 +1,154 @@
+:root {
+  --primary-color1: #1c1c1c;
+  --background--color1: #0e0a1b;
+  --primary-color2: #0e0a1b;
+  --background--color2: #1c1c1c;
+}
+label {
+  position: relative;
+  color: white;
+}
+input:hover ~ label {
+  font-size: 20px;
+  color: cyan;
+}
+input:focus ~ label {
+  display: none;
+}
+#parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: url("pexels-photo-building.jpg") no-repeat; */
+  /* background-position: center; */
+  /* background-size: cover; */
+  background-color: var(--background--color2);
+  width: 100%;
+  font-family: monospace;
+  font-size: 15px;
+}
+#purchase-box {
+  color: white;
+  margin-block: 20px;
+  position: relative;
+  height: 425px;
+  width: 735px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#purchase-box::before {
+  content: "";
+  position: absolute;
+  width: 890px;
+  height: 890px;
+  background: linear-gradient(to left, cyan 50%, magenta 50%);
+  z-index: 1;
+  animation: animate 10s linear infinite;
+}
+#purchase-form {
+  position: absolute;
+  background: var(--primary-color2);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  height: 420px;
+  width: 730px;
+  overflow: hidden;
+}
+#number-input {
+  margin: 15px;
+}
+#number {
+  border: none;
+  font-size: 15px;
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  color: white;
+  border-bottom: 2px solid;
+}
+
+#property-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-block: 10px;
+}
+
+.card-box {
+  color: white;
+  position: relative;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 800px;
+  margin: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-box::before {
+  content: "";
+  position: absolute;
+  width: 920px;
+  height: 920px;
+  background: linear-gradient(to left, cyan 50%, magenta 50%);
+  z-index: 1;
+  animation: animate 10s linear infinite;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 445px;
+  height: 795px;
+  z-index: 1;
+  border-radius: 10px;
+  background-color: var(--background--color2);
+}
+#id-div {
+  font-size: 20px;
+}
+
+#details {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#details h5 {
+  font-size: 15px;
+  margin: 5px;
+}
+#card img {
+  width: 100%;
+  height: 45%;
+}
+.hide {
+  display: none;
+}
+
+#search-input {
+  margin: 15px;
+}
+#search {
+  border: none;
+  font-size: 15px;
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  color: white;
+  border-bottom: 2px solid;
+}

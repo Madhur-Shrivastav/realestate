@@ -25,55 +25,11 @@ input:hover ~ label {
 input:focus ~ label {
   display: none;
 }
-#navbar-box {
-  margin-top: 10px;
-  background-color: aliceblue;
+#navbar,
+#participantsbar {
   color: white;
-  position: relative;
-  height: 85px;
-  width: 205px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  overflow: hidden;
 }
-#navbar-box::before {
-  content: "";
-  position: absolute;
-  background: linear-gradient(to left, cyan 50%, magenta 50%);
-  z-index: 1;
-  animation: animate 5s linear infinite;
-  width: 515px;
-  height: 515px;
-}
-#navbar {
-  z-index: 1;
-  height: 80px;
-  width: 200px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--primary-color2);
-  border-radius: 10px;
-}
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-#link {
-  color: white;
-  text-decoration: none;
-}
-#address-div {
-  font-size: 20px;
-}
+
 button {
   margin: 20px;
   font-size: 20px;
@@ -82,7 +38,6 @@ button {
   background-color: var(--background--color2);
   color: white;
 }
-
 button:hover {
   background: linear-gradient(to left, cyan, magenta);
   border: 2px solid;
@@ -92,7 +47,7 @@ button:hover {
   color: white;
   margin-block: 20px;
   position: relative;
-  height: 300px;
+  height: 425px;
   width: 735px;
   display: flex;
   justify-content: center;
@@ -103,8 +58,8 @@ button:hover {
 #manager-box::before {
   content: "";
   position: absolute;
-  width: 785px;
-  height: 785px;
+  width: 890px;
+  height: 890px;
   background: linear-gradient(to left, cyan 50%, magenta 50%);
   z-index: 1;
   animation: animate 10s linear infinite;
@@ -118,7 +73,76 @@ button:hover {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  height: 295px;
+  height: 420px;
   width: 730px;
   overflow: hidden;
+}
+
+#seller-box {
+  color: white;
+  margin-block: 20px;
+  position: relative;
+  height: 1090px;
+  width: 735px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#seller-box::before {
+  content: "";
+  position: absolute;
+  width: 1300px;
+  height: 1300px;
+  background: linear-gradient(to left, cyan 50%, magenta 50%);
+  z-index: 1;
+  animation: animate 10s linear infinite;
+}
+
+#seller-form {
+  position: absolute;
+  background: var(--primary-color2);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  height: 1085px;
+  width: 730px;
+  overflow: hidden;
+}
+
+#location-input,
+#name-input,
+#produced-input,
+#contact-input,
+#size-input,
+#bedrooms-input,
+#bathrooms-input,
+#kitchens-input,
+#drawingrooms-input,
+#price-input,
+#file-input {
+  margin: 15px;
+}
+#location,
+#produced,
+#size,
+#name,
+#contact,
+#bedrooms,
+#bathrooms,
+#kitchens,
+#drawingrooms,
+#price,
+#file {
+  border: none;
+  font-size: 15px;
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  color: white;
+  border-bottom: 2px solid;
 }
